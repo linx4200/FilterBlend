@@ -214,6 +214,7 @@ pre[class*="language-"] {
 .container__options {
   display: table-cell;
   vertical-align: top;
+  height: 100%;
 }
 .container__main {
   padding-bottom: 25px;
