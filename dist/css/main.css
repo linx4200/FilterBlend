@@ -15,6 +15,7 @@
 .container__main,
 .container__options {
   display: table-cell;
+  height: 100%;
   vertical-align: top;
 }
 .container__main {
@@ -75,7 +76,7 @@
   border-radius: 0.3em;
   cursor: pointer;
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
   margin-right: 5px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -127,7 +128,7 @@
   left: 0;
   border-radius: 50px;
   -webkit-transition: 0.18s;
-          transition: 0.18s;
+  transition: 0.18s;
 }
 .check__background {
   width: 100%;
@@ -166,7 +167,7 @@
   -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
           clip-path: polygon(100% 0, 0 0, 100% 100%);
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
 }
 .github-badge a:hover {
   opacity: 0.8;
@@ -197,7 +198,7 @@
   background: #58cb6b;
   opacity: 0.6;
   -webkit-transition: opacity 0.15s;
-          transition: opacity 0.15s;
+  transition: opacity 0.15s;
 }
 pre[class*="language-"] {
   padding: 1em 0.6em;
@@ -404,7 +405,7 @@ body {
 a {
   text-decoration: none;
   -webkit-transition: color 0.15s, background-color 0.15s, opacity 0.15s;
-          transition: color 0.15s, background-color 0.15s, opacity 0.15s;
+  transition: color 0.15s, background-color 0.15s, opacity 0.15s;
   color: #58cb6b;
 }
 a:hover {
@@ -440,7 +441,7 @@ input[type='search'] {
   box: inline-block;
   border: none;
   -webkit-transition: background 0.15s, color 0.15s;
-          transition: background 0.15s, color 0.15s;
+  transition: background 0.15s, color 0.15s;
   vertical-align: middle;
   border: 1px solid #eee;
   padding: 0.45em 0.8em;
@@ -613,7 +614,7 @@ p {
   line-height: 1;
   cursor: pointer;
   -webkit-transition: background 0.15s, color 0.15s;
-          transition: background 0.15s, color 0.15s;
+  transition: background 0.15s, color 0.15s;
   margin: 0 0 7px;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.125);
@@ -641,7 +642,7 @@ p {
   cursor: pointer;
   margin-bottom: 0.8em;
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -659,7 +660,7 @@ p {
   color: #777;
   margin: 0 0.2em;
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
   background: #eee;
   border-radius: 3px;
   cursor: ns-resize;
@@ -724,8 +725,10 @@ p {
   left: 0;
   padding: 13px 22px 10px 18px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.25s, visibility 0.25s;
-          transition: transform 0.3s, opacity 0.25s, visibility 0.25s;
+  -webkit-transition: opacity 0.25s, visibility 0.25s, -webkit-transform 0.3s;
+  transition: opacity 0.25s, visibility 0.25s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.25s, visibility 0.25s;
+  transition: transform 0.3s, opacity 0.25s, visibility 0.25s, -webkit-transform 0.3s;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-20%);
@@ -796,7 +799,7 @@ p {
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
   border-radius: 3px;
   -webkit-transition: background-color 0.2s;
-          transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 .picker__body {
   display: -webkit-box;
@@ -834,7 +837,7 @@ p {
   overflow: hidden;
   cursor: pointer;
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
 }
 .picker__call:hover {
   color: #58cb6b;
@@ -861,7 +864,7 @@ p {
   border: 1px solid rgba(0,0,0,0.15);
   cursor: pointer;
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
   vertical-align: middle;
   background-size: 100%;
 }
@@ -894,7 +897,7 @@ p {
   left: 0;
   cursor: move;
   -webkit-transition: background-color 0.2s;
-          transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 .source {
   color: #ababbb;
@@ -954,7 +957,7 @@ p {
   height: 100%;
   line-height: 32px;
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
 }
 .source__selected {
   text-align: center;
@@ -999,7 +1002,7 @@ p {
   border: 1px solid #eee;
   border-left: none;
   -webkit-transition: border-color 0.15s;
-          transition: border-color 0.15s;
+  transition: border-color 0.15s;
 }
 .is-selected .source__input {
   border-color: #58cb6b;
@@ -1031,7 +1034,7 @@ p {
   line-height: 32px;
   text-align: center;
   -webkit-transition: 0.2s;
-          transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 .source__buttons-item.is-hidden {
@@ -1067,7 +1070,7 @@ p {
   background: #f5f5f5;
   cursor: pointer;
   -webkit-transition: 0.15s;
-          transition: 0.15s;
+  transition: 0.15s;
   margin-right: 8px;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.125);
